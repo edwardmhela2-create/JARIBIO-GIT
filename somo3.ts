@@ -1,9 +1,9 @@
 let jina: string = "Edward"
-const umri: number = 23;
+let umri: number = 23;
 let anafanyaKazi: boolean = false;
 
 
-umri = 23;
+umri = 24;
 jina = "Edward Mhela";
 
 
