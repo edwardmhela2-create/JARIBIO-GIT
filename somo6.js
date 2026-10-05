@@ -10,7 +10,7 @@ for (const m of wafanyakazi) {
         console.log(`${m.jina}: mkataba wa kujiuzulu`);
     }
     else if (m.anafanyaKazi) {
-        console.log(`${m.jina}: inafanya kazi sasa`);
+        console.log(`${m.jina}: anafanya kazi sasa`);
     }
     else {
         console.log(`${m.jina}: likizo`);
