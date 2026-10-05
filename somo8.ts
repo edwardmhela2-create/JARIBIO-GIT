@@ -35,7 +35,7 @@ jina.wasikiliza(() => {
 });
 
 console.log("Kabla: [" + onyesho + "]");       // bado tupu — hakuna mabadiliko yajayo
-jina.weka("MWANAFUNZI");                        <!-- MOJA tu ya kugusa -->
+jina.weka("MWANAFUNZI");                        
 console.log("Baada:  " + onyesho);              // imejisasisha YENYEWE
 console.log("Ndogo:  " + herufiNdogo);          // msikilizaji wa pili pia amepata
 
