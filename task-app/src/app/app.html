@@ -38,6 +38,27 @@
     <p class="mt-3 text-gray-600">Umebonyeza mara: {{ bonyezaMara() }}</p>
     <button (click)="andikaMara()" class="mt-2 rounded-lg bg-gray-800 px-4 py-2 text-white">Nimebonyeza hapa</button>
   </section>
+
+   <section class="bg-white border border-gray-200 p-4 rounded-xl shadow mb-4">
+    <h2 class="text-xl font-semibold text-gray-800">Orodha ya kazi (@for)</h2>
+    <ul class="list-disc pl-6 text-gray-700">
+      @for (kazi of kaziZangu(); track kazi) {
+        <li>{{ kazi }}</li>
+      } @empty {
+        <li class="text-gray-400">Hakuna kazi — bonyeza ongeza!</li>
+      }
+    </ul>
+    <button (click)="ongezaKazi()" class="mt-2 rounded-lg bg-green-700 px-4 py-2 text-white">+ Ongeza kazi</button>
+  </section>
+
+  <section class="bg-white border border-gray-200 p-4 rounded-xl shadow mb-4">
+    <h2 class="text-xl font-semibold text-gray-800">Hali ya umri (@if)</h2>
+    @if (umri() >= 18) {
+      <p class="text-green-700">Umeifikia umri wa kujiajiri.</p>
+    } @else {
+      <p class="text-red-700">Bado umedogo — endelea kusoma.</p>
+    }
+  </section>
 </main>
 
 <footer class="text-center text-gray-500 p-4">

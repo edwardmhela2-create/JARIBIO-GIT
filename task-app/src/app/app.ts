@@ -25,4 +25,15 @@ export class App {
   andikaMara(): void {
     this.bonyezaMara.update(v => v + 1);
   }
+
+  protected kaziZangu = signal<string[]>([
+    'Kusoma somo la Angular',
+    'Kurekebisha HTML',
+    'Kupush` kwenye GitHub',
+  ]);
+
+  ongezaKazi(): void {
+    const mpya = `Kazi namba ${this.kaziZangu().length + 1}`;
+    this.kaziZangu.update(list => [...list, mpya]);
+  }
 }
