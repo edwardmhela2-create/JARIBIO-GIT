@@ -9,4 +9,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('task-app');
+  protected jina = 'Edward Mhela';
+  protected umri = 23;
+  protected mwalimu = 'Angela';
 }
